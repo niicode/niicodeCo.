@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>niicodeCo.</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'bootstrap-4.1.3-dist/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'niicodeCo/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'niicodeCo/css/fixed.css' %}">
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+<!-- home section -->
+<div id="home">
+<!--navbar-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<a class="navbar-brand" href="#">niicodeCo.</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+  	<ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link navright" href="#home">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link navright" href="/get/blog">Blog</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link navright" href="#contact">Contacts</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link navright" href="#resources">Resources</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link navright" href="#clients">Clients</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link navright" href="#social">Let's Go Social</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--end of navbar section-->
+
+<!--start of landing page -->
+<div class="landing">
+	<div class="home-wrap">
+		<div class="home-inner" style="background-image: url({% static 'niicodeCo/img/Holy.jpg' %});">
+		</div>
+	</div>
+</div>
+
+<div class= "caption text-center">
+	<h1>Welcome to our humble home</h1>
+	<h3>I would like to show you around</h3>
+	<a class="btn btn-outline-light btn-lg" href="#blog">come with me</a>
+
+</div>
+<!---end of home section--->	
+
+<!---Blog section --->
+<div id='blog' class="offset">
+	<div class="col-12 narrow text-center">
+		<h1>Get updated with the latest happening with us</h1>
+		<p class="lead">We are happing to be feeding you with the lastest news in webdevelopment and tech.</p>
+		<a class="btn btn-secondary btn-md" href="#" target="_blank">Visit Blog</a>
+	</div>
+</div>
+<!--end of Blog section-->
+
+<!---about section --->
+<div id='contact' class="offset">
+<div class="jumbotron">
+	<div class="narrow text-center">
+		<div class="col-12">
+			<h3 class="heading">Contacts</h3>
+			<div class="heading-underline"></div>
+		</div>
+		<div class="row text-center">
+
+			<div class="col-md-4">
+				<div class="contact">
+					<a href=""><i class="fas fa-play-circle fa-4x" data-fa-transform="shrink-3 up-5"></i></a>
+					<h3>Video about us</h3>
+					<p> niicode is an upcoming software company which is interested in making your ideas visible to you through the use of technology</p>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="contact">
+					<a href=""><i class="fas fa-sliders-h fa-4x" data-fa-transform="shrink-4.5 up-4.5"></i></a>
+					<h3>What we do</h3>
+					<p> We build websites, mobile applications both Frontend and Backend</p>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="contact">
+					<a href=""><i class="fab fa-wpforms fa-4x" data-fa-transform="shrink-4 up-5"></i></a>
+					<h3>Contact Form</h3>
+					<p> You can fill this contact form to get to us</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</div>
+
+<!--end of about section-->
+
+<!---cookbook section --->
+<div id='resources' class="offset">
+	<div class="fixed-background">
+
+		<div class="row dark text-center">
+			<div class="col-12">
+				<h3 class="heading">Built With</h3>
+				<div class="heading-underline"></div>
+			</div>
+		
+
+			<div class="col-md-4">
+				<div class="contact">
+					<h3>HTML 5</h3>
+					<i class="fas fa-code fa-3x"></i>
+				</div>
+				<p>Built with the lastest HTML 5.</p>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="contact">
+					<h3>BOOTSTRAP 4</h3>
+					<i class="fas fa-bold fa-3x"></i>
+				</div>
+				<p>Built with the lastest BOOTSTRAP 4</p>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="contact">
+					<h3>CSS 3</h3>
+					<i class="fab fa-css3 fa-3x"></i>
+				</div>
+				<p>Built with the lastest CSS 3</p>
+			</div>
+
+			<div class="fixed-wrap">
+				<div class="fixed" style="background-image: url({% static 'niicodeCo/img/desk.jpg' %});">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="clients" class="offset">
+	<div class="jumbotron">
+		<div class="col-12 text-center">
+			<h3 class="heading">Clients</h3>
+			<div class="heading-underline"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 clients">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="{% static 'niicodeCo/img/dad.JPG' %}">
+					</div>
+					<div class="col-md-8">
+						<blockquote>
+							<i class="fas fa-quote-left"></i>
+							I believe it has been worth working with niicode to help me build up my website that has brought me a lot of clients to purchase my product.
+							<hr class="clients-hr">
+							<cite>&#8212; Thomas Dodoo, Small Scale Business</cite>
+						</blockquote>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 clients">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="{% static 'niicodeCo/img/client1.JPG' %}">
+					</div>
+					<div class="col-md-8">
+						<blockquote>
+							<i class="fas fa-quote-left"></i>
+							I am very happy to have this opportunity to testify about niicodeCo. They have really been of Great help to me in challenging me with more ideas that have brought me this far in my career as a Programmer.
+							<hr class="clients-hr">
+							<cite>&#8212; Nii Darku, Computer Programmer</cite>
+						</blockquote>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 narrow text-center">
+		<p class="lead">We will be happy to work with you!</p>
+		<a class="btn btn-secondary btn-md" href="#" target="_blank">Get to us</a>
+	</div>
+</div>
+
+
+<div id="social" class="offset">
+	<footer>
+		<div class="row justify-content-center">
+			<div class="col-md-5 text-center">
+				<h3>niicodeCo.</h3>
+				<p>You can find us on social media on  <br>any of the following platforms</p>
+				<strong>Contact Info</strong>
+				<p>(+233) 50-143-0726 <br>niidarku66@gmail.com</p>
+				<a href="https://www.facebook.com/Niidarku" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://www.twitter.com/kdarkulive" target="_blank"><i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/kdarkulive" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+		<hr class="socket">
+		&copy; niicode 2020.
+	</footer>
+</div>
+
+{% block content %}
+{% endblock content %}
+
+<!-- js section -->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'bootstrap-4.1.3-dist/js/bootstrap.min.js' %}"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+</body>
+</html>
