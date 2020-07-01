@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Niicode Post New</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    </head>
+    <body>
+
+        <h1>POST YOUR CONTENT HERE</h1>
+{% if post_form.errors %}
+   {{post_form.non_field_errors}}
+{% endif %}
+
+<form method="POST" action="/niicode/post_new/" class="post-form">{% csrf_token %}
+ {{ post_form}}
+  <button type="submit" class="save btn btn-default">Save</button>
+</form>
+
+<br>
+<center><a href='/niicode/blog/'>Back to the Homepage  </a> </center>
+    </body>
+</html>

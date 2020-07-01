@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>comments</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    </head>
+    <body>
+
+
+<div class="container">
+    {% if comment_form.errors %}
+   {{comment_form.non_field_errors}}
+{% endif %}
+       <h1>POST YOUR Comment HERE</h1>
+
+
+<form  method="POST" action="/niicodeCo/post_new_comment/" class="post-form"> {% csrf_token %}
+ {{ comment_form.as_p }}
+ <input type='hidden' name='article_id' value='{{article_id}}' />
+  <button type="submit" class="btn btn-primary save btn btn-default">Save</button>
+</form>
+
+ </div>
+<br>
+<center><a href='/'>Back to the Homepage  </a> </center>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>niicode edit</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    </head>
+    <body>
+
+
+<div class="container">
+    {% if post_form.errors %}
+   {{post_form.non_field_errors}}
+{% endif %}
+       <h1>EDIT YOUR POST HERE</h1>
+
+
+
+<form enctype="multipart/form-data" method="POST" action="/niicode/edit_post/{{article_id}}/" class="post-form"> {% csrf_token %}
+ {{ post_form.as_p}}
+  <button type="submit" class="btn btn-primary save btn btn-default">Save Changes</button>
+</form>
+
+ </div>
+<br>
+<center><a href='/'>Back to the Homepage  </a> </center>
+    </body>
+</html>

@@ -26,8 +26,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #addups
+    'crispy_forms',
     #added apps
     'niicodeCo',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -112,3 +116,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIR = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
