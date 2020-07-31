@@ -126,13 +126,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 LOGIN_URL = '/users/login/'
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
-
-# Configure Django App for Heroku.
-if 'DATABASE_URL' in os.environ:
-    DATABASES['default'] = dj_database_url.config()
-
-    DEBUG = False
-
-import django_heroku
-
-django_heroku.settings(locals())
