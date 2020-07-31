@@ -38,7 +38,7 @@ def login_view(request):
 
             if userobject is not None and userobject.is_active:
                 login(request, userobject)
-                return redirect('/gideon/')
+                return redirect('/niicode/')
             else:
                 return render(request, 'login.html', {'login_form': form})
         else:

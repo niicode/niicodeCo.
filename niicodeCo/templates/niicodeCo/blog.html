@@ -1,6 +1,6 @@
 <!doctype html>
-<html class="no-js" lang="">
-    <head>
+<html class="no-js" lang="en">
+<head>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -8,6 +8,13 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800,900%7cRaleway:300,400,500,600,700" rel="stylesheet">
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
 
 .pb-100 {
    padding-bottom: 100px;
@@ -135,6 +142,10 @@ a.box_btn {
 a.box_btn:hover::before {
    left: 0;
    z-index: -1;
+    width: 75%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+    background-color: #CC5B00;
 }
 </style>
 </head>
@@ -147,10 +158,11 @@ a.box_btn:hover::before {
 
                      <h4>niicodeco. {{user.get_full_name}}</h4>
                   </div>
+                   <a href='/'>Back to the Homepage  </a>
+                   <a href="/users/logout/" class="btn btn-secondary btn_box" role="button">Logout</a>
                </div>
             </div>
             <div class="row">
-
 {% for item in mycontent %}
 
                <div class="col-lg-4 col-md-6">
@@ -200,12 +212,7 @@ a.box_btn:hover::before {
                </div>
 
 {% endfor %}
-
-
-{{post_form.as_p}}
-         <br>     <br>
-<center><a href='/'>Back to the Homepage  </a> </center>
-<a href="/users/logout/" class="box_btn">Logout</a>
+                {{post_form.as_p}}
             </div>
          </div>
       </section>
