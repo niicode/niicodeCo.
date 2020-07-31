@@ -14,7 +14,7 @@ SECRET_KEY = 'o($el=e=bou+l5(hpcci)o1%l08w-3hr^!8vs*ckje6=hijy9&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'niicode.github.io']
+ALLOWED_HOSTS = ['127.0.0.1', 'niicode.herokuapp.com']
 
 
 # Application definition
